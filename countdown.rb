@@ -1,9 +1,4 @@
 #write your code here
-def countdown_with_sleep
-    sleep(1)
-end
-
-
 
 def countdown(integer)
     while integer > 0
@@ -12,7 +7,18 @@ def countdown(integer)
         else puts "#{integer} SECONDS!"
         end
         integer -= 1
-        countdown_with_sleep
+    end
+    return "HAPPY NEW YEAR!"
+end
+
+def countdown_with_sleep(integer, seconds)
+    while integer > 0
+        if integer == 1
+            puts "#{integer} SECOND!"
+        else puts "#{integer} SECONDS!"
+        end
+        integer -= 1
+        sleep(seconds)
     end
     return "HAPPY NEW YEAR!"
 end
